@@ -1,0 +1,3 @@
+command: ${java} -Xmx${memory}M -Dfile.encoding=UTF8 -Dspring.profiles.active=execution-worker -DZOOKEEPER_CONNECT_STRING=${zookeeper.connect.string} -Dexecution.task.queue.input=${tasks.queue} -Dlogging.path=${log.dir} -Dlogging.file=${log.file} -Djava.io.tmpdir=${temp.dir} -jar ${worker.jar} ${config.server.parameters}
+cpu: 1.0
+memory: 16384
